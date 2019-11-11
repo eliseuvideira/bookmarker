@@ -1,7 +1,19 @@
 {
   "name": "bookmarker",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "dist/main.js",
   "author": "Eliseu Videira <eliseuvideira1@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "electron": "^7.1.1"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/tsc",
+    "electron": "node_modules/.bin/electron --disable-gpu .",
+    "debug": "yarn build && yarn electron"
+  }
 }

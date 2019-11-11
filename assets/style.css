@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+input {
+  font: menu;
+}
+
+p,
+input,
+button {
+  margin: 3px 0;
+}
+
+input {
+  max-width: 500px;
+}
+
+.clear-storage {
+  margin-top: 16px;
+}
